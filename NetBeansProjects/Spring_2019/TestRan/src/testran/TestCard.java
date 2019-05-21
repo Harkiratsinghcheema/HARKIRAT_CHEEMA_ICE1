@@ -23,29 +23,12 @@ public class TestCard
         TestRan c1= new TestRan();
         c1.setSuit(TestRan.SUITS[c1.getRandomSuit()]);
         c1.setValue(c1.getRandomValue());
-        Hand[i]= c1;
-        System.out.println(Hand[i].getSuit() + "\n" + Hand[i].getValue());
+        
         
        }
 //input from user lucky card.
 
-Scanner in = new Scanner(System.in);
-System.out.println("enter suit");
-String userSuit = in.nextLine();
-//in.nextLine();
-System.out.println("enter value");
-int userValue= in.nextInt();
-//System.out.println(" \n");
 
-boolean found = false;
-for(int i=0;i<Hand.length;i++)
-{
-if(userValue==Hand[i].getValue() && userSuit.equalsIgnoreCase(Hand[i].getSuit()))
-{
-    found =true;
-    break;
-}  
-}
 
 if(found)
 {
