@@ -13,6 +13,7 @@ package ca.sheridancollege.week3.softwarefundamentals.ice1;
  * This code is to be used in ICE1. When you create your own branch,
  * add your name as a modifier.
  * @author Sivagami
+ * Modifier: Harkirat Cheema
  */
 public class Card {
 
@@ -49,5 +50,12 @@ public class Card {
     }
    
    //Write two methods to generate random number of values and suits here
-    
+    public int getRandom(){
+        int number=(int)(Math.random()*13+1);
+        return number;
+    }
+    public int getRandomSuit(){
+        int number=(int)(Math.random()*3+0);
+        return number;
+    }
 }
